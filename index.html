@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Interestelar</title>
+</head>
+
+<link rel="stylesheet" href="./assets/style.css">
+
+<body>
+    <div class="title-box">
+        <h1 class="page-title">
+            Conversor Interestelar
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <p class="page-elements"><b>Olá! Qual é o seu nome?</b></p>
+            <input type="text" id="nameUser" placeholder="Digite o seu nome">
+
+            <p class="page-elements"><b>Qual é o valor em quilômetros que você quer converter para anos luz?</b></p>
+            <label id="recebeValor" for="valorKm"></label>
+            <input type="number" id="valorKm" placeholder="Digite um valor"> <br>
+
+            <button id="btnConverter1">Converter</button>
+            <button id="btnLimpar1">Limpar</button>
+
+            <p class="page-elements"><b>Aqui está, o valor da conversão de quilômetros para anos luz: </b></p>
+            <p id="resultConvert"></p>
+        </div>
+
+        <div class="box2">
+            <p class="page-elements"><b>Escolha uma estrela de destino:</b></p>
+            <label class="recebeValor" for="valorStar"></label>
+            <select name="role" id="estrela">
+                <option value="">Selecione uma estrela</option>
+                <option value="star1">Alpha Centauri</option>
+                <option value="star2">Epsilon Eridani</option>
+            </select> <br>
+
+            <p class="page-elements"><b>Qual a velocidade em Km/H que você quer percorrer?</b></p>
+            <label class="recebeValor" for="valorKmH"></label>
+            <input type="number" id="valorKmH" placeholder="Digite um valor"> <br>
+
+            <button id="btnCalcular">Calcular</button>
+            <button id="btnLimpar2">Limpar</button>
+
+            <p class="page-elements"><b>Viajando nessa velocidade, da Terra até a estrela escolhida, o tempo de viagem
+                    seria: </b></p>
+            <p id="resultCalculo"></p>
+        </div>
+
+        <div class="pop-up">
+            <p>ℹ️</p>
+            <p id="popup"><b>Deseja saber quanto tempo levaria para viajar do nosso sol até uma estrela?"</b></p>
+            <button id="btnSim">Sim</button>
+        </div>
+
+    </div>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+        alt="">
+    <script src="script.js"></script>
+</body>
+
+</html>
